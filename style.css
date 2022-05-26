@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  font-family: gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #20203d, #3636e4);
+  color: wheat;
+}
+h1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#countLabel {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+}
+button {
+  display: inline-block;
+  font-size: medium;
+}
