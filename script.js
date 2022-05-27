@@ -714,3 +714,131 @@ scores.forEach((score) => {
 // .some() = checking if any of the elements arraymeet a certent rule will return true otherwise return false
 /* let scores = [100, 50, 60, 90, 70];
 console.log(scores.some((score) => score < 40)); */
+
+// DAy 27/05/2022 review js basics 
+
+// ==== .filter() === created a new array
+/* const shows = [
+  {
+    name: "Lamin",
+    series: 1,
+    episodes: 20,
+  },
+  {
+    name: "Tomas Chellby",
+    series: 5,
+    episodes: 50,
+  },
+  {
+    name: "Rola .rozaa",
+    series: 3,
+    episodes: 10,
+  },
+];
+checkSeries = shows.filter((show) => show.series > 2);
+console.log(checkSeries); */
+// .reduce() =
+//arrName.reduce(accumulator, currentValue) => accumulator + currentValue)
+/* const scores = [2, 5, 7, 9];
+
+const total = scores.reduce((totalScore, score) => totalScore + score);
+console.log(total); */
+
+/* const costs = [44, 5, 6, 2];
+const total = costs.reduce((totalCost, cost) => totalCost - cost);
+console.log(total); */
+// ===== .every() = it's a javascript method tests weather all element
+//       in the array passed the test implemented by the function it returns a boolean value
+//   if everything in our array matches a rule, return true
+
+/* let testResults = [100, 50, 60, 90, 70, 33, 23];
+console.log(testResults.every((result) => result > 20));
+const animals = ["cat", "dog", "rat", "mouse"];
+
+const checkAnimals = animals.every((animal) => animal.length == 3);
+console.log(checkAnimals);
+ */
+// ===== .split() =
+/* const sentence = "Common baby light my fire";
+// get the third word for the sentence using code
+
+const word = sentence.split(" ")[2];
+console.log(word); */
+
+//====  Array Work Exercises
+//==++++++++++++
+//=+++++++++++++++++++++++
+//  === EX1
+/* const degrees = [23, 140, 212, 41];
+function getCelcius() {
+  return degrees.map((degree) => ((degree - 32) * 5) / 9);
+}
+console.log(getCelcius()); */
+// === EX2
+/* const arr = [11, NaN, [], "Angels"];
+function checkForFalsey() {
+  return arr.some((value) => value === NaN || [] || null || undefined || 0);
+}
+console.log(checkForFalsey()); */
+// ==== EX3
+
+/* const arr = ["Rabbit", "Football", "Cracking"];
+function getTotal() {
+  // return arr.toString(" ").length;
+  return arr.reduce((ar, value) => ar + value).length;
+}
+console.log(getTotal()); */
+// ==== EX4
+
+/* let numbers = [9, 16, 81];
+function checkSquares() {
+  return numbers.every((num) => Math.sqrt(num) % 1 === 0);
+}
+console.log(checkSquares()); */
+// === EX5
+
+/* const values = ["23cm", "5.6cm", "1000cm"];
+function getValues() {
+  let converting = values.map((i) => parseInt(i));
+  return converting;
+}
+console.log(getValues()); */
+//== EX6
+/* const sentence = "In West philadephia, born and raised";
+const vowels = ["a", "e", "i", "I", "o", "u"];
+
+function getVowelCount() {
+  return sentence.split("").filter((letter) => vowels.includes(letter)).length;
+}
+console.log(getVowelCount(""));
+ */
+/* const phrase = "the queens gambit";
+
+function capitalise() {
+  return phrase
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.substr(1));
+}
+console.log(capitalise()); */
+
+//++++++++++++++
+//=++++++++++++++++++
+//++++++++++++++++++++++++++  DOM +++++++++
+
+// target.addEventListener(event,function)
+/* const body = document.querySelector("body");
+body.addEventListener("click", () => {
+  console.log("clicked");
+}); */
+
+// remove eventListener
+/* const circle = document.querySelector(".circle");
+let height = 0;
+function toggleColor() {
+  height += 50;
+  circle.style.top = height + "px";
+  if (height > 300) {
+    circle.removeEventListener("click", toggleColor);
+  }
+}
+circle.addEventListener("click", toggleColor); */
