@@ -842,3 +842,16 @@ function toggleColor() {
   }
 }
 circle.addEventListener("click", toggleColor); */
+/ ======= querySelector && querySelectorAll
+//===== Math.randome() && Math.floor(), && Math.ceil(); && Math.round()
+/* let ex = Math.random() * 5;
+console.log(Math.floor(ex));
+console.log(Math.ceil(ex)); */
+// ===== ES6 ==== Mosh
+/* const person = {
+  man: "isshaq",
+  walk() {},
+};
+person.walk();
+person.man = "eee";
+console.log(person); */
