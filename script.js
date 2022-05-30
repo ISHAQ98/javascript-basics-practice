@@ -876,3 +876,54 @@ console.log(Math.ceil(ex)); */
 person.walk();
 person.man = "eee";
 console.log(person); */
+
+//==== 30 - 05 - 2022
+// ==== Date js object
+
+/* const today = new Date();
+const date = today.getDay();
+const fullYear = today.getFullYear();
+const hours = today.getHours();
+const iseString = today.toISOString();
+
+console.log(today);
+console.log(date);
+console.log(fullYear);
+console.log(hours);
+console.log(iseString);
+
+const elAeid = new Date("2022-07-10T17:36:53.717Z");
+
+console.log(elAeid - today);
+const millisecondes = elAeid - today;
+const minutes = millisecondes / 6000;
+const hour = minutes / 60;
+console.log(hour); */
+
+//+======= Times
+//====== setTimeout(function, milliseconds)
+/* const time = 5000;
+
+function showtext() {
+  console.log("Hello Issacdev & issaccode");
+}
+setTimeout(showtext, time);
+
+const bubble = document.querySelector("#bubble");
+const trengle = document.querySelector("#trengle");
+
+function hideBublle() {
+  bubble.style.display = "none";
+}
+setTimeout(hideBublle, 2000); */
+
+//======== setInterval(function, milliseconds)
+
+/* const text = "Mohamed profit of Allah";
+const time = 2000;
+
+setInterval(() => {
+  console.log(text);
+}, time);
+ */
+// ======= clearInterval()
