@@ -926,4 +926,109 @@ setInterval(() => {
   console.log(text);
 }, time);
  */
+// ===  clearInterval() && setInretval
+setInterval(() => {
+  console.log(text);
+}, time);
+ */
 // ======= clearInterval()
+
+// ==== Ania classes  === 1/06/2022
+
+//====== Classes
+// class declaration
+
+/* class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+const newRectangle = new Rectangle(300, 100);
+console.log(newRectangle.width); */
+
+// packman play  practice class
+
+/* class Ghost {
+  constructor(className, speed, color, startingPoint) {
+    this.className = className;
+    this.speed = speed;
+    this.color = color;
+    this.startingPoint = startingPoint;
+  }
+}
+
+const blinky = new Ghost("blinky", 300, "yellow", 4);
+const inky = new Ghost("inky", 250, "blue", 10);
+const pinky = new Ghost("pinky", 350, "pink", 20);
+const clyde = new Ghost("clyde", 450, "orange", 15);
+
+console.log(blinky.speed); */
+
+// keys keyboard events
+/* function control(e) {
+  if (e.key === "ArrowUp" || 'a') {
+    console.log("pressed up");
+  } else if (e.key === "ArrowDown") {
+    console.log("arro pressed Down");
+  }
+}
+document.addEventListener("keydown", control); */
+
+// ==== Ania classes  === 1/06/2022
+
+//====== Classes
+// class declaration
+
+/* class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+const newRectangle = new Rectangle(300, 100);
+console.log(newRectangle.width); */
+
+// packman play  practice class
+
+/* class Ghost {
+  constructor(className, speed, color, startingPoint) {
+    this.className = className;
+    this.speed = speed;
+    this.color = color;
+    this.startingPoint = startingPoint;
+  }
+}
+
+const blinky = new Ghost("blinky", 300, "yellow", 4);
+const inky = new Ghost("inky", 250, "blue", 10);
+const pinky = new Ghost("pinky", 350, "pink", 20);
+const clyde = new Ghost("clyde", 450, "orange", 15);
+
+console.log(blinky.speed); */
+
+// keys keyboard events
+/* function control(e) {
+  if (e.key === "ArrowUp" || 'a') {
+    console.log("pressed up");
+  } else if (e.key === "ArrowDown") {
+    console.log("arro pressed Down");
+  }
+}
+document.addEventListener("keydown", control); */
+
+// =====
+// ===== Switch case
+/* const circle = document.querySelector(".circle");
+function control(e) {
+  let answer;
+  switch (e.key) {
+    case "ArrowUp":
+      answer = console.log("pressed up");
+      break;
+    case "ArrowDown":
+      answer = console.log("arro pressed Down");
+      break;
+  }
+}
+document.addEventListener("keydown", control); */
