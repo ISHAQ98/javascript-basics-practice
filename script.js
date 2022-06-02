@@ -1032,3 +1032,26 @@ function control(e) {
   }
 }
 document.addEventListener("keydown", control); */
+
+//+======== .includes()
+/* const books = ["alf", "Life of Pi"];
+console.log(books.includes("Eve")); */
+//========= .contains()
+
+/* const body = document.querySelector("body");
+const circle = document.querySelector(".circle");
+
+console.log(body.contains(circle)); */
+
+// ======== .createElement() == fron js file
+
+/* const square = document.createElement("div");
+const body = document.querySelector("body");
+console.log(square);
+
+body.appendChild(square);
+
+// === setAttribute()
+
+image.setAttribute('src','src/images/headshot.png') */
+
