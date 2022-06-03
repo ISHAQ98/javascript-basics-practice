@@ -1055,3 +1055,169 @@ body.appendChild(square);
 
 image.setAttribute('src','src/images/headshot.png') */
 
+
+
+// ===============
+//+=:::::::========== Bro Code Javascript tutorial start 3;17
+//====== Object = A group of properties and methods
+//      properties = what an object has
+//     methods = what an object can do
+//  use . or []to access properties || methods
+/* 
+const car = {
+  model: "Mercides",
+  color: "black",
+  year: 2023,
+
+  drive: function () {
+    console.log(`You drive the car ${this.model}`);
+  },
+  brake() {
+    console.log("You sten on the brakes");
+  },
+};
+car.color = "red";
+changeColor = "red";
+console.log(car.drive());
+console.log(car.color);
+ */
+//==== this = reference to a particular object
+//            the object depends on the immediate context
+/* let name = "Izak";
+console.log(this); // fine in chrome window */
+
+// ==== class = a blueprint for creating objects
+//          define what properties and methods they have
+//       use a constructor for unique properties
+
+/* class Player {
+  score = 3;
+  puase() {
+    console.log("You paused the game");
+  }
+  exit() {
+    console.log("You exited the game");
+  }
+}
+const player1 = new Player();
+const player2 = new Player();
+const player3 = new Player();
+player1.score += 1;
+console.log(player1.score);
+
+player1.puase();
+player3.score--;
+console.log(player3.score); */
+
+//== Constructor = a special method of a class,
+//         accepts arguments and assigns properties
+
+/* class Student {
+  constructor(name, age, grade) {
+    this.name = name;
+    this.age = age;
+    this.grade = grade;
+  }
+}
+let student1 = new Student("Sami", 22, "A");
+console.log(student1.age, student1.name);
+
+let student2 = new Student("Laura", 32, "C");
+console.log(student2.age, student2.name); */
+
+// ==== .static keyword
+//  static = belongs to class, not the objects
+//   properties: useful for caches, fixed-configuration
+//    methods useful for utility functions
+
+/* class Car {
+  static numberOfCars = 0;
+
+  constructor(model) {
+    this.model = model;
+    Car.numberOfCars += 1;
+  }
+  static startRace() {
+    console.log("3...2...1...GO!");
+  }
+}
+
+const car1 = new Car("Muzda");
+const car2 = new Car("honday");
+const car3 = new Car("toyota");
+
+console.log(Car.numberOfCars); */
+
+//===== inheritance = a child class can inherit all the methods and properties from another class
+/* class Animal {
+  alive = true;
+  eat() {
+    console.log(`This ${this.name} is eating`);
+  }
+  sleep() {
+    console.log(`This ${this.name} is sleeping`);
+  }
+}
+
+class Rabbit extends Animal {
+  name = "rabbit";
+  run() {
+    console.log(`This ${this.name} is running`);
+  }
+}
+class Fish extends Animal {
+  name = "fish";
+  swim() {
+    console.log(`This ${this.name} is swimming`);
+  }
+}
+class Hawk extends Animal {
+  name = "hawk";
+  fly() {
+    console.log(`This ${this.name} is flaying`);
+  }
+}
+let know = new Rabbit();
+console.log(know.name);
+console.log(know.sleep());
+console.log(know.eat());
+const hawk = new Hawk();
+console.log(hawk.name);
+console.log(hawk.sleep());
+console.log(hawk.fly());
+ */
+
+//=== super = Refers to the parent class.
+//     Commonly used to invoke construnctor of a parent class
+
+// ==== Getters && Setters
+//== get  = binds an object property to a function when that property is accessed
+//       benifits of getter = + is increases data security / + you can performe some additional logic when you access a properties
+
+// === set = binds an object property to a function
+//       when that property is assigned a value
+/* class Car {
+  constructor(power) {
+    this._gas = 10;
+    this._power = power;
+  }
+  get power() {
+    return `${this._power}hp`;
+  }
+  get gas() {
+    return `${(this._gas / 20) * 100} % L`;
+  }
+  set gas(value) {
+    if (value > 3000) {
+      value = 50;
+    } else if (value < 0) {
+      value = 0;
+    }
+    this._gas = value;
+  }
+}
+let car = new Car(400);
+car.gas = 1000000;
+console.log(car.power);
+console.log(car.gas); */
+
