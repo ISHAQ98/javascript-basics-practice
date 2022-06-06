@@ -1284,3 +1284,117 @@ try {
   console.log("This always executes");
 }
  */
+
+// ======= The date object is used to work with dates @ times
+//let date = new Date(2023, 0, 1, 2);
+// let date = new Date();
+/* 
+console.log(date);
+let year = date.getFullYear();
+date = date.toLocaleString();
+document.getElementById("myLabel").innerHTML = date;
+console.log(year);
+ */
+
+///==== clock program
+/* 
+const myLabel = document.getElementById("myLabel");
+update();
+setInterval(update, 1000);
+function update() {
+  let date = new Date();
+  myLabel.innerHTML = formatTime(date);
+  function formatTime() {
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    let amOrPm = hours >= 12 ? "pm" : "am";
+    hours = hours % 12 || 12;
+
+    hours = formatZeroes(hours);
+    minutes = formatZeroes(minutes);
+    seconds = formatZeroes(seconds);
+    return `${hours}: ${minutes}: ${seconds} ${amOrPm}`;
+  }
+  function formatZeroes(time) {
+    time = time.toString();
+    return time.length < 2 ? "0" + time : time;
+  }
+}
+ */
+
+// == synchronous code = In an ordered sequence. Step-by-step linear instructions
+//              (start now, finish now)
+/* 
+console.log("START");
+console.log("This is synchronous");
+console.log("END");
+ */
+// asynchronous code = Out of sequence
+//           Ex. Access a database / Fetch a file / tascks that take time / (start now, finish sometime later)
+/* 
+console.log("START");
+setTimeout(() => console.log("This is asynchronous"), 3000);
+console.log("END");
+ */
+
+// === promise
+
+// async = makes a function a Promise
+/* 
+async function loadFile() {
+  let fileLoaded = false;
+  if (fileLoaded) {
+    return "File loaded";
+  } else {
+    throw "File Not loaded";
+  }
+} */
+/* 
+const promise = new Promise((resolve, reject) => {
+  let fileLoaded = false;
+  if (fileLoaded) {
+    resolve("File loaded");
+  } else {
+    reject("File Not loaded");
+  }
+});
+ */
+//promise
+/* 
+loadFile()
+  .then((value) => console.log(value))
+  .catch((error) => console.log(error));
+ */
+
+//==== await = makes an async function wait for a Promise
+// ===== ES6 Modules
+// ===== DOM = is an api /  is an interface for changing the content of a page html
+
+// console.dir(document);
+// console.log(document.title);
+// console.log(document.URL);
+// document.location = "https..."
+/* 
+// document.body.style.backgroundColor = "lightBlue";
+//getElementById('id')
+const myTitle = document.getElementById("myTitle");
+myTitle.style.backgroundColor = "lightgreen";
+myTitle.style.color = "black";
+//getElementsByName('name')
+const fruits = document.getElementsByName("fruits");
+fruits.forEach((fruit) => {
+  if (fruit.checked) {
+    console.log(fruit.value);
+  }
+});
+//getElementsByTagName('tagName')
+
+let vegetables = document.getElementsByTagName("li");
+vegetables[0].style.backgroundColor = "lightyellow";
+vegetables[2].style.marginTop = "22px";
+
+//getElementsByClassName('className')
+// querySelector(. / # / tagName / name / attr [for])
+// querySelectorAll(. / # / tagName / name / attr [for])
+ */
