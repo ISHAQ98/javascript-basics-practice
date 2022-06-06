@@ -1237,3 +1237,50 @@ function zeroArray(m, n) {
 let matrix = zeroArray(3, 2);
 console.log(matrix);
  */
+
+
+// ==++====. 6/6/2022
+
+//== anonymous objects = Objects without a name
+//             Not directly referenced less syntax. No need for unique names
+/* 
+class Card {
+  constructor(value, suit) {
+    this.value = value;
+    this.suit = suit;
+  }
+}
+//  new Card("A", "Hearts"); ====== old way
+// new Card("A", "Spades");
+// new Card("2", "Diamonds");
+// new Card("2", "Clubs"); 
+
+let cardes = [
+  new Card("A", "Hearts"),
+  new Card("A", "Spades"),
+  new Card("2", "Diamonds"),
+  new Card("2", "Clubs"),
+];
+// console.log(card2.value + card2.suit);
+console.log(cardes[0].value + cardes[3].suit);
+cardes.forEach((card) => console.log(card.value + card.suit));
+ */
+
+// error= object with a description of something went wrong
+
+// Can't open a file / Lose connection / User types incorrect input / TypeError
+
+// throw  = executes a user-defined error
+/* 
+try {
+  let x = window.prompt("Enter a #");
+  x = Number(x);
+  if (isNaN(x)) throw "That wasn't a number";
+  if (x == "") throw "That was a number";
+  console.log(`${x} is a number`);
+} catch (error) {
+  console.log(error);
+} finally {
+  console.log("This always executes");
+}
+ */
