@@ -1398,3 +1398,166 @@ vegetables[2].style.marginTop = "22px";
 // querySelector(. / # / tagName / name / attr [for])
 // querySelectorAll(. / # / tagName / name / attr [for])
  */
+
+
+
+//====== ==++++ === 07/ 06/ 2022 =================+++=====
+// ====== DOM Traversal
+//.firstElementChild
+// .lastElementChild
+// .parentElement
+// .nextElementSibling
+// Array.from(.children)
+
+//==== add / change HTML elements
+// .innerHtml (vulnerable to xss attacks)
+// .textContent (more secure)
+
+// const nameTag = document.createElement("h1");
+// nameTag.innerHTML = window.prompt("Enter your name");
+// document.body.append(nameTag);
+/* 
+const myList = document.querySelector("#myList");
+const listItem = document.createElement("li");
+listItem.textContent = "mango";
+myList.append(listItem);
+myList.prepend(listItem); // make the item  first
+
+myList.insertBefore(listItem, myList.getElementsByTagName("li")[2]);
+ */
+
+//====== add change CSS properties
+/* 
+const myTitle = document.getElementById("myTitle");
+myTitle.style.color = "red";
+myTitle.style.textShadow = "2px 1px 4px white";
+myTitle.style.textAlign = "center";
+myTitle.style.border = "3px solid red";
+ */
+
+// ===== Events
+
+// const element = document.getElementById("btn");
+// element = document.body;
+//const element = document.getElementById("text");
+
+// element.onclick = doSomething;
+// element.onmouseover = doSomething;
+// element.onmouseout = doSomething;
+
+//element.onload = doSomething;
+// element.onchange = doSomething;
+// function doSomething() {
+//   alert("you did something");
+// }
+/* 
+const circle = document.querySelector(".circle");
+
+function changeColor() {
+  circle.style.backgroundColor = "yellow";
+}
+function removeColor() {
+  circle.style.backgroundColor = "orange";
+}
+addEventListener("mouseover", changeColor);
+addEventListener("mouseout", removeColor);
+ */
+//==== show/hide HTML elements
+
+// const btn = document.querySelector("#btn");
+// const myCar = document.querySelector("#myCar");
+// btn.style.cursor = "pointer";
+
+// btn.addEventListener("click", () => {
+//   if (myCar.style.display /*visibility */ === /* visible || hidden */ "none") {
+//     myCar.style.display = "block";
+//   } else {
+//     myCar.style.display = "none";
+//   }
+// });
+
+//===== detect key presses
+/* 
+const circle = document.querySelector(".circle");
+let size = 0;
+const myFunc = (e) => {
+  size += 50;
+  if (e.key === "ArrowDown") {
+    circle.style.top = size + "px";
+  } else if (e.key === "ArrowLeft") {
+    circle.style.right = size + "px";
+  }
+};
+
+document.addEventListener("keydown", myFunc);
+ 
+const circle = document.querySelector(".circle");
+let x = 0;
+let y = 0;
+
+const myFunc = (e) => {
+  switch (e.key) {
+    case "ArrowDown":
+      y += 20;
+      circle.style.top = y + "px";
+      break;
+    case "ArrowUp":
+      y -= 20;
+      circle.style.top = y + "px";
+      break;
+    case "ArrowRight":
+      y += 20;
+      circle.style.left = x + "px";
+      break;
+    case "ArrowLeft":
+      y -= 20;
+      circle.style.left = x + "px";
+      break;
+    default:
+      break;
+  }
+};
+window.document.addEventListener("keydown", myFunc);
+*/
+
+// ===== animations
+//===== Canvas API = a means for drawing graphics
+//            used for animations, games, data visualization
+/* 
+let canvas = document.getElementById("myCanvas");
+let context = canvas.getContext("2d");
+
+context.strokeStyle = "orange";
+context.lineWidth = 10;
+context.beginPath();
+context.moveTo(0, 0);
+context.lineTo(250, 250);
+context.lineTo(250, 500);
+context.moveTo(500, 0);
+context.lineTo(250, 250);
+context.stroke();
+ */
+// Drow circle
+// (x,y,r, sAngle, eAngle, counterclockwise)
+/* 
+context.lineWidth = 10;
+context.fillStyle = "green";
+context.strokeStyle = "orange";
+context.beginPath();
+context.arc(250, 250, 200, 0, 2 * Math.PI);
+context.stroke();
+context.fill();
+ */
+
+// Drow text
+/* 
+context.font = "50px MV Boli";
+context.fillStyle = "white";
+context.fillText("You Good", canvas.width / 2, canvas.height / 2);
+ */
+
+//=== window = interface used to talk to web broser the DOM is a property of the window
+//=== cookie = a small text file stored on your computer used to remember information about the user saved in name=value pairs
+/* document.cookie = "firstName=spongeBob; expires=Sun; path=/";
+
+console.log(document.cookie); */
