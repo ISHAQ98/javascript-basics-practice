@@ -601,7 +601,8 @@ for (let price of prices) {
 /* let fruits = ["apple", "orange", "banana"];
 console.log(fruits.sort().reverse()); */
 
-//====== 2D array = An Array of arrays
+//==== Day3//=====  2D array = An Array of arrays
+
 //======= spread operator = allows an iterable such as array or string to be
 //  ...       expanded in places where zero or more arguments
 //         are expected (unpacksthe elements)
@@ -1538,7 +1539,8 @@ context.lineTo(250, 250);
 context.stroke();
  */
 // Drow circle
-// (x,y,r, sAngle, eAngle, counterclockwise)
+
+// (x,y,r, SAngle, EAngle, counterclockwise)
 /* 
 context.lineWidth = 10;
 context.fillStyle = "green";
