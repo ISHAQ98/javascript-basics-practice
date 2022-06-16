@@ -1337,7 +1337,17 @@ console.log("END");
 console.log("START");
 setTimeout(() => console.log("This is asynchronous"), 3000);
 console.log("END");
+
+
+le promise = new Promise((resolve,reject) =>{
+if(true){
+resolve('tes it is true')
+}else{
+reject('false')
+}
+})
  */
+
 
 // === promise
 
