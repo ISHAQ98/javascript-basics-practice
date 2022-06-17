@@ -1573,3 +1573,21 @@ context.fillText("You Good", canvas.width / 2, canvas.height / 2);
 /* document.cookie = "firstName=spongeBob; expires=Sun; path=/";
 
 console.log(document.cookie); */
+
+// ==== 17 - 06 - 2022
+// ==== Create a promise
+/* 
+const myPromise = new Promise((resolve, reject) => {
+  const rand = Math.floor(Math.random() * 4);
+  if (rand === 0) {
+    resolve();
+  } else {
+    reject();
+  }
+});
+myPromise
+  .then(() => console.log("Success"))
+  .catch(() => console.log("Failed Sth went wrong"));
+ */
+// ==== fetch with promises
+
