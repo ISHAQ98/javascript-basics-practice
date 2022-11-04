@@ -94,6 +94,19 @@ switch (job) {
   default:
     console.log(`${job} is a teacher`);
 }
+
+const Dolphins = 96 + 108 + 89;
+const Kaolas = 88 + 91 + 110;
+const ScoreOfDolphins = Dolphins / 3;
+const ScoreOfKaolas = Kaolas / 3;
+
+if (ScoreOfDolphins > ScoreOfKaolas) {
+  console.log("winner is dolphins team ");
+} else if (ScoreOfKaolas > ScoreOfDolphins) {
+  console.log("loser is Kaolas team");
+} else {
+  console.log("teams are draw");
+}
  */
 
 // coding challenges
