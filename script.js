@@ -1604,3 +1604,25 @@ myPromise
  */
 // ==== fetch with promises
 
+// functions exersice
+/*
+const calcAvrerage = (a, b, c) => {
+  return (a + b + c) / 3;
+};
+console.log(calcAvrerage(2, 3, 4));
+
+const scoreDolphins = calcAvrerage(44, 23, 71);
+const scoreKoalas = calcAvrerage(65, 54, 49);
+console.log(scoreDolphins, scoreKoalas);
+
+const checkWinner = (scoreDolphins, scoreKoalas) => {
+  const winn =
+    scoreDolphins >= 2 * scoreKoalas
+      ? console.log(`Dolphins team is win with ${scoreDolphins}`)
+      : console.log(`Koalas team is win with ${scoreKoalas}`);
+  return winn;
+};
+
+console.log(checkWinner(222, 111));*/
+
+
